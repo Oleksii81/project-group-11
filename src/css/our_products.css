@@ -66,7 +66,7 @@
 }
 /*
   |============================
-  |-----SHTEFANYO--SETTINGS----
+  |-----------SETTINGS---------
   |============================
 */
 .our-products-section {
@@ -118,7 +118,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .hide-our-products-item {
+  .hide-our-products-mob {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -183,7 +183,7 @@
 
   color: var(--background-color);
 
-  background: rgba(17, 17, 17, 0.1);
+  background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
