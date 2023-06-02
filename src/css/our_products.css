@@ -86,9 +86,11 @@
 }
 
 .our-products-list {
+  position: relative;
+
   display: flex;
-  flex-wrap: nowrap;
-  /*flex-wrap: wrap;*/
+  /*flex-wrap: nowrap;
+  flex-wrap: wrap;*/
   gap: 18px;
   /*justify-content: center;*/
 }
@@ -181,7 +183,7 @@
 
   color: var(--background-color);
 
-  background: #fafafa;
+  background: rgba(17, 17, 17, 0.1);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
@@ -222,4 +224,12 @@
   background: rgba(17, 17, 17, 0.1);
   border-radius: 50%;
   border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-products-tablet {
+    width: 270px;
+    position: absolute;
+    left: 82.4%;
+  }
 }
