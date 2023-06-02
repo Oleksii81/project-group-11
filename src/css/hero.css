@@ -139,7 +139,7 @@
   color: #ffffff;
   padding: 12px 28px;
 
-  background-color: #fd9222;
+  background-color: var(--brand-color);
   height: 41px;
   min-width: 120px;
   border-radius: 100px;
@@ -154,6 +154,11 @@
     height: 45px;
     min-width: 144px;
   }
+}
+
+.hero-btn-order:hover {
+  background-color: #fcf1e0;
+  color: var(--brand-color);
 }
 
 .hero-button-link {
