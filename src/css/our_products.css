@@ -1,11 +1,6 @@
 /*
   |============================
-  |-----SHTEFANYO-PRODUCTS-----
-  |============================
-*/
-/*
-  |============================
-  |-----SHTEFANYO--TEXT--------
+  |------------TEXT------------
   |============================
 */
 .word-our-slogan {
@@ -76,7 +71,18 @@
 */
 .our-products-section {
   padding: 72px 0;
-  background: #e2e2e2;
+}
+
+@media screen and (min-width: 768px) {
+  .our-products-section {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-products-section {
+    padding: 128px 0;
+  }
 }
 
 .our-products-list {
@@ -87,10 +93,6 @@
 }
 
 .our-products-item {
-  /*margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 52px;
-    margin-right: 52px;*/
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 52px;
@@ -102,6 +104,13 @@
   border-radius: 15px;
 
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .our-products-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .our-products-content {
