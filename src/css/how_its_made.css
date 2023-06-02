@@ -1,0 +1,60 @@
+.how-made {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 375px;
+    margin-bottom: 20px;
+    /* Прибрати ці падфнги бо вони загальні */
+    background: #FFFFFF;
+    border-radius: 15px;
+
+}
+.howmade-span {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #111111;
+    margin-bottom: 32px;
+}
+.howmade-span-made {
+    color: #FD9222;
+}
+.howmade-video {
+    width: 335px;
+    height: 500px;
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    transform: translateY(0px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.howmade-p {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    max-width: 307px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #111111;
+}
+.howmade-li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+    
+    margin-bottom: 18px;
+}
+.howmade-li::marker {
+    color:#4C4C4C;
+    border: 1px solid #ECEDED;
+}
