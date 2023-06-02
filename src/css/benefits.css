@@ -1,0 +1,14 @@
+/* Basic styles */
+.benefits {
+  background-color: var(--dark-violet-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Tablet styles >=768px */
+@media only screen (min-width: 768px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
