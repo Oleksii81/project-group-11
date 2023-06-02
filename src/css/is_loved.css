@@ -1,46 +1,35 @@
 
 
-/*first word*/
-
-.is-loved-first-word{
-    font-family:Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-
-    color: var(--brand-color);
-}
-
-
-
-
-
-.is-loved-another-text{
-    font-family:Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-
-    color: var(--brand-color);
-    color: rgba(17, 17, 17, 1);
-}
-
-.is-loved-costumer-name {
-    font-family:Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-
+.reviews{
+    background-color: var(--background-white);
     color: var(--background-color);
+    padding-bottom: 72px;
+}
 
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rewiews{
+        padding-bottom: 128px;
+    }
+}
+
+.reviews-title {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-title{
+        font-size: 24px;
+        line-height: calc(28px / 24px);
+        margin-bottom: 50px;
+    }
+}
+
+.reviews-title-word{
+    color: var(--brand-color);
 }
