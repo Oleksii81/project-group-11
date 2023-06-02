@@ -13,18 +13,17 @@
   }
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 767px) {
-  .benefits-list-item:not(:last-child) {
-    margin-bottom: 20px;
-  }
+/* Basic styles */
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Tables styles >=768px */
 @media only screen and (min-width: 768px) {
   .benefits-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 32px;
   }
   .benefits-list-item {
