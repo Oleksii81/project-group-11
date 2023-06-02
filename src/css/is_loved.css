@@ -1,0 +1,46 @@
+
+
+/*first word*/
+
+.is-loved-first-word{
+    font-family:Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--brand-color);
+}
+
+
+
+
+
+.is-loved-another-text{
+    font-family:Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--brand-color);
+    color: rgba(17, 17, 17, 1);
+}
+
+.is-loved-costumer-name {
+    font-family:Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+
+    color: var(--background-color);
+
+}
