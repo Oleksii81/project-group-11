@@ -212,6 +212,8 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: inline-block;
+  margin-right: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,6 +243,18 @@
   }
 }
 
+.scroll-icon-mobile {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-icon-mobile {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .hero-scroll-link {
   height: 28px;
   width: 28px;
@@ -256,7 +270,10 @@
   }
 }
 
-.hero-scroll-link .scroll-text:hover {
+.scroll-text:hover {
+  color: #fd9222;
+}
+.scroll-text:hover + .hero-scroll-link {
   background-color: #fd9222;
-  color: white;
+  color: #fd9222;
 }
