@@ -108,8 +108,24 @@
 
 @media screen and (min-width: 768px) {
   .our-products-item {
+    width: auto;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-our-products-item {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
