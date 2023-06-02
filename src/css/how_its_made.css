@@ -3,11 +3,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    max-width: 375px;
     margin-bottom: 20px;
     /* Прибрати ці падфнги бо вони загальні */
-    background: #FFFFFF;
+    /* background: var(--background-white); */
     border-radius: 15px;
+    margin-bottom: 72px;
 
 }
 .howmade-span {
@@ -17,13 +17,13 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.03em;
-    color: #111111;
+    color: var(--background-color);
     margin-bottom: 32px;
 }
 .howmade-span-made {
-    color: #FD9222;
+    color: var(--brand-color);
 }
-.howmade-video {
+.video {
     width: 335px;
     height: 500px;
     display: block;
@@ -34,6 +34,19 @@
     margin-right: auto;
     margin-bottom: 40px;
 }
+@media (min-width: 768px) {
+    .video {
+        width: 614px;
+        height: 854px;
+    }
+}
+.howmade-list-div {
+    background-color: var(--background-white);
+    border-radius: 15px;
+    max-width: 335px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .howmade-p {
     display: flex;
     margin-left: auto;
@@ -43,18 +56,21 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
-    color: #111111;
+    color: var(--background-color);
+}
+.howmade-ul {
+    margin-top:20px;
+    max-width: 375px;
+    list-style-type: disc;
+    padding-left: 30px;
+    padding-right: 14px;
+    list-style-image: url("./src/img/sprite.svg#list_point"); 
 }
 .howmade-li {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    color: #111111;
-    
+    color: var(--background-color); 
     margin-bottom: 18px;
-}
-.howmade-li::marker {
-    color:#4C4C4C;
-    border: 1px solid #ECEDED;
 }
