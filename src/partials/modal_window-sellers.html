@@ -1,3 +1,4 @@
+
     <!-- Module Window -->
     <div class="backdrop" is-hidden data-modal>
       <div class="thumb-div">
@@ -15,16 +16,15 @@
               <img
                 class="choko-img"
                 srcset="
-                  ./images/choko/choko1.png              84w,
-                  ./images/choko/choko1@2x.png          168w,
-                  ./images/choko/choko1_tab_deck.png    120w,
-                  ./images/choko/choko1@2x_tab_deck.png 240w
+                ./src/img/modal-window-sellers/choko1.png    84w,
+                ./src/img/modal-window-sellers/choko1@2x.png 168w,
+                ./src/img/modal-window-sellers/choko1_tab_deck.png 121w,
+                ./src/img/modal-window-sellers/choko1.png 240w
                 "
-                sizes=" (min-witht: 768px) 120px, (min-witht: 320px) 84px, 100vw"
-                src="./images/choko/choko1.png"
+                sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+                src="./src/img/modal-window-sellers/choko1.png"
                 alt="choko1"
-                width="84"
-                height="69"
+
               />
               <button type="button" class="choko-price">100 g</button>
             </div>
@@ -32,11 +32,14 @@
           <li class="choko-li">
             <div class="choko-div">
               <img
-                srcset="
-                  ./images/choko/choko2.png    1x,
-                  ./images/choko/choko2@2x.png 2x
-                "
-                src="./images/choko/choko2.png"
+              srcset="
+              ./src/img/modal-window-sellers/choko2.png    84w,
+              ./src/img/modal-window-sellers/choko2@2x.png 168w,
+              ./src/img/modal-window-sellers/choko2_tab_deck.png 121w,
+              ./src/img/modal-window-sellers/choko2.png 240w
+              "
+              sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+                src="./src/img/modal-window-sellers/choko2.png"
                 alt="choko2"
               />
               <button class="choko-price">200 g</button>
@@ -45,11 +48,14 @@
           <li class="choko-li">
             <div class="choko-div">
               <img
-                srcset="
-                  ./images/choko/choko3.png    1x,
-                  ./images/choko/choko3@2x.png 2x
-                "
-                src="./images/choko/choko3.png"
+              srcset="
+              ./src/img/modal-window-sellers/choko3.png    84w,
+              ./src/img/modal-window-sellers/choko3@2x.png 168w,
+              ./src/img/modal-window-sellers/choko3_tab_deck.png 121w,
+              ./src/img/modal-window-sellers/choko3.png 240w
+              "
+              sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+                src="./src/img/modal-window-sellers/choko3.png"
                 alt="choko3"
               />
               <button class="choko-price">300 g</button>
@@ -101,7 +107,7 @@
                 />
                 <span class="mun-span">
                   <svg width="24" height="18" class="flag-svg">
-                    <use href="./images/icons.svg#flag"></use></svg
+                    <use href="./src/public/sprite.svg#flag"></use></svg
                   >+380</span
                 >
               </div>
@@ -119,7 +125,7 @@
                   maxlength="16"
                 />
                 <svg width="32" height="21" class="card-svg">
-                  <use href="./images/icons.svg#card"></use>
+                  <use href="./src/public/sprite.svg#card"></use>
                 </svg>
               </div>
             </li>
@@ -141,3 +147,5 @@
     </div>
 
     <script src="./js/modal.js"></script>
+  </body>
+</html>
