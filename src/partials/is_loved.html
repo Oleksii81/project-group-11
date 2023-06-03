@@ -103,4 +103,62 @@
         </button>
     </div>
 
+    <!--Modal-->
+
+    <div class="modal-leave-review-container">
+        <div class="modal-leave-review-wraper">
+            <form class="modale-leave-review">
+                <button data-modal-close class="modal-leave-review-close-btn">
+                    <svg class="modal-leave-review-close-icon">
+                        <use href="../img/sprite.svg#cross_black"></use>
+                    </svg>
+                </button>
+
+                <h2 class="modal-leave-review-header">
+                    LEAVE A REVIEW <br> ABOUT <span>OUR CHOCOLATE</span>
+                </h2>
+                <label class="modal-leave-review-input">
+                    <span class="modal-name">
+                        <input 
+                        type="text"
+                        name="user_name"
+                        class="modal-leave-review-input"
+                        placeholder="Name"
+                        pattern="[a-zA-Zа-яА-Я]+"
+                        minlength="3"
+                        />
+                    </span>
+                </label>
+            
+            <label class="modal-leave-review-field">
+                <span class="modal-email">
+                    <input 
+                    type="email"
+                    name="user_email"
+                    class="modal-leave-review-input"
+                    placeholder="Email"
+                    />
+                </span>
+            </label>
+            
+            <label class="modal-leave-review-field">
+                <span class="modal-leave-review-wrap">
+                    <span class="modal-phone">
+                        <input 
+                        type="tel"
+                        name="user_phone"
+                        class="modal-leave-review-input  modal-leave-review-input-phone"
+                        placeholder="Phone number"
+                        />
+                        <svg class="modal-leave-review-icon" width="32" height="24">
+                                <use href="../img/sprite.svg#flag"></use>
+                        </svg>
+                        
+                    </span>
+                </span>
+            </label>
+        </form>
+        </div>
+    </div>
+
 </section>
