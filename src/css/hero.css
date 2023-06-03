@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero-container {
     padding: 0 16px 0 20px;
   }
@@ -8,12 +8,12 @@
   .hero-container {
     padding: 0 40px;
   }
-}
+} */
 
-.hero {
+.hero-container {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
@@ -22,10 +22,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .hero {
-    max-width: 335px;
+  .hero-container {
+    max-width: 375px;
     padding-top: 395px;
     padding-bottom: 20px;
+    padding-right: 20px;
 
     margin-bottom: 72px;
 
@@ -42,7 +43,7 @@
   screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero {
+  .hero-container {
     background-image: linear-gradient(
         to top,
         rgba(17, 17, 17, 1),
@@ -53,8 +54,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    width: 704px;
+  .hero-container {
+    max-width: 768px;
     padding-top: 671px;
     padding-bottom: 40px;
 
@@ -73,7 +74,7 @@
   screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
+  .hero-container {
     background-image: linear-gradient(
         to top,
         rgba(17, 17, 17, 1),
@@ -84,10 +85,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    width: 1136px;
+  .hero-container {
+    max-width: 1200px;
     padding-top: 361px;
     margin-bottom: 69px;
+
+    background-position: left 32px right 32px;
+
+    width: 1136px;
+    height: 600px;
+    /* background-size: 1136px 600px; */
 
     background-image: linear-gradient(
         to top,
@@ -102,7 +109,7 @@
   screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero {
+  .hero-container {
     background-image: linear-gradient(
         to top,
         rgba(17, 17, 17, 1),
@@ -145,6 +152,9 @@
   border-radius: 100px;
   border: none;
   display: inline-block;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -177,6 +187,9 @@
   border-radius: 100px;
   border: 1px solid #ffffff;
   display: block;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -213,7 +226,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   display: inline-block;
-  margin-right: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -276,4 +288,16 @@
 .scroll-text:hover + .hero-scroll-link {
   background-color: #fd9222;
   color: #fd9222;
+}
+
+.test {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .test {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
