@@ -10,6 +10,14 @@
     margin-bottom: 72px;
 
 }
+@media (min-width: 1200px) {
+    .howmade-flex-list {
+        display: flex;
+        gap: 20px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
 .howmade-span {
     display: flex;
     justify-content: center;
@@ -21,7 +29,16 @@
     margin-bottom: 32px;
 }
 .howmade-span-made {
+    color: var(--brand-color);}
+    
+@media (min-width: 1200px) {
+    .howmade-span {
+    margin-bottom: 50px;
+    }
+}
+.howmade-span-made {
     color: var(--brand-color);
+    margin-left: 5px;
 }
 .howmade-video {
     margin-left: auto;
@@ -33,14 +50,27 @@
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 1200px) {
+    .howmade-video {
+        margin-bottom: 0;
+    }
+}
 .video {
-    width: 335px;
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(100% - 40px);
     height: 500px;
     display: block;
     overflow: hidden;
     border-radius: 15px;
     transform: translateY(0px);
    
+}
+@media (min-width: 375px) {
+    .video {
+    width: 335px; 
+    }
 }
 @media (min-width: 768px) {
     .video {
@@ -52,8 +82,44 @@
     background-color: var(--background-white);
     border-radius: 15px;
     max-width: 335px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    padding: 20px 14px;
+    /* padding-bottom: 20px; */
+}
+@media (min-width: 768px) {
+    .howmade-list-div {
+        max-width: 614px;
+        padding: 32px 32px 32px;
+    }
+}
+@media (min-width: 375px) {
+    .video {
+        width: 335px;
+    }
+}
+@media (min-width: 768px) {
+    .video {
+        width: 614px;
+        height: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .video {
+        width: 600px;
+    }
+}
+.howmade-list-div {
+    background-color: var(--background-white);
+    border-radius: 15px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 14px;
+}
+@media (min-width: 375px) {
+    .howmade-list-div {
+        max-width: 335px;
+    }
 }
 @media (min-width: 768px) {
     .howmade-list-div {
@@ -66,24 +132,72 @@
     margin-left: auto;
     margin-right: auto;
     text-align: start;
-    max-width: 307px;
+    /* max-width: 307px; */
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
     color: var(--background-color);
 }
+@media (min-width: 768px) {
+    .howmade-p {
+        margin-right: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .howmade-p {
+        margin-right: 102px;
+    }
+}
+@media (min-width: 768px) {
+    .howmade-p {
+        margin-right: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .howmade-p {
+        margin-right: 102px;
+    }
+}
 .howmade-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     margin-top:20px;
-    max-width: 375px;
-    list-style-type: disc;
-    padding-left: 30px;
     padding-right: 14px;
-    list-style-image: url("./src/img/sprite.svg#list_point"); 
+    list-style: none; 
+    
+}
+@media (min-width: 768px) {
+    .howmade-ul {
+        margin-top: 28px;
+        padding-right: 100px; 
+    }
+}
+@media (min-width: 1200px) {
+    .howmade-ul {
+        gap: 24px;
+        padding-right: 0px;
+    }
 }
 .howmade-li {
+    position: relative;
+    margin-left: 16px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--background-color); 
+}
+.howmade-li::before {
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    display: inline-block;
+    margin-right: 8px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
 }
