@@ -19,6 +19,11 @@
   border-radius: 30px;
   overflow: hidden;
   background-color: #fcf1e0;
+  background-image: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 1),
+    rgba(17, 17, 17, 0)
+  );
 }
 
 @media screen and (max-width: 767px) {
@@ -90,11 +95,9 @@
     padding-top: 361px;
     margin-bottom: 69px;
 
-    background-position: left 32px right 32px;
+    /* width: 1136px; */
 
-    width: 1136px;
-    height: 600px;
-    /* background-size: 1136px 600px; */
+    /* background-size: 1200px 600px; */
 
     background-image: linear-gradient(
         to top,
@@ -146,7 +149,7 @@
   color: #ffffff;
   padding: 12px 28px;
 
-  background-color: #fd9222;
+  background-color: var(--brand-color);
   height: 41px;
   min-width: 120px;
   border-radius: 100px;
@@ -169,7 +172,7 @@
 .hero-btn-order:hover,
 .hero-btn-order:focus {
   background-color: #fcf1e0;
-  color: #fd9222;
+  color: var(--brand-color);
 }
 
 .hero-button-link {
@@ -203,8 +206,8 @@
 
 .hero-button-link:hover,
 .hero-button-link:focus {
-  border: 1px solid #fd9222;
-  color: #fd9222;
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
 }
 
 .hero-buttons {
@@ -218,24 +221,7 @@
   }
 }
 
-.scroll-text {
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-  .scroll-text {
-    font-size: 14px;
-    line-height: 1.28;
-  }
-}
-
-.scroll {
+/* .scroll {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -245,7 +231,7 @@
   .scroll {
     gap: 14px;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .hero-btns-positioning {
@@ -255,48 +241,87 @@
   }
 }
 
-.scroll-icon-mobile {
+.hero-scroll-btn {
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: inline-block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero-scroll-container {
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+  background-color: white;
+  color: var(--brand-color);
+  display: inline-block;
+  padding: 6px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-container {
+    height: 38px;
+    width: 38px;
+    padding: 8px;
+  }
+}
+
+.scroll-icon {
   width: 16px;
   height: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .scroll-icon-mobile {
+  .scroll-icon {
     width: 22px;
     height: 22px;
   }
 }
 
-.hero-scroll-link {
-  height: 28px;
-  width: 28px;
-  border-radius: 50px;
-  background-color: white;
-  color: #fd9222;
+.hero-scroll-btn:hover,
+.hero-scroll-btn:focus {
+  background-color: none;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-scroll-link {
-    height: 38px;
-    width: 38px;
-  }
+.hero-scroll-btn:hover .hero-scroll-container,
+.hero-scroll-btn:focus .hero-scroll-container {
+  background-color: var(--brand-color);
 }
 
-.scroll-text:hover {
-  color: #fd9222;
-}
-.scroll-text:hover + .hero-scroll-link {
-  background-color: #fd9222;
-  color: #fd9222;
+.hero-scroll-btn:hover .scroll-text,
+.hero-scroll-btn:focus .scroll-text {
+  color: var(--brand-color);
 }
 
-.test {
+.hero-info {
   padding-right: 20px;
   padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .test {
+  .hero-info {
     padding-right: 40px;
     padding-left: 40px;
   }
