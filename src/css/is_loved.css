@@ -19,6 +19,12 @@
 }
 
 .reviews-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -.03em;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
@@ -61,6 +67,7 @@
     font-size: 18px;
     line-height: 1.33;
     color: var(--background-color);
+    margin-bottom:24px;
 }
 
 .reviews-text {
