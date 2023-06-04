@@ -1,29 +1,29 @@
-const swiper = new Swiper('.swiper-rew', {
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 28,
-  loop: true,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 375px
-    375: {
-      slidesPerView: 1,
-      spaceBetween: 28,
-    },
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 28,
-    },
-    // when window width is >= 1200px
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 28,
-    },
-  },
-  // Pagination
-  pagination: {
-    el: '.swiper-pagination-review',
-    clickable: true,
-  },
+const swiper = new Swiper('.swiper', {
+// Optional parameters
+direction: 'horizontal',
+loop: true,
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+},
+
+breakpoints: {
+1200: { slidesPerView: 3 },
+768: { slidesPerView: 2 },
+320: { slidesPerView: 1 },
+},
+loop: false,
+
+
+
 });
