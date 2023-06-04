@@ -1,4 +1,23 @@
 
+:root {
+  --brand-color: #FD9222;
+  --background-color: #111111;
+  --dark-violet-color: #1E1823;
+  --background-white: #FFFFFF;
+  --cross-black-hov:  #d44528;
+  --btn-back: #fcf1e0;
+  --color-text: #000000;
+  --modal-back: #fafafa;
+  --shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 
 .backdrop-rev {
     position: fixed;
@@ -33,7 +52,7 @@
     width: 311px;
     border-radius: 15px;
     padding: 32px 24px;
-    background: #fafafa;
+    background: var(--modal-back);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -60,7 +79,7 @@
     padding: 0;
     border: none;
     border-radius: 50%;
-    background-color: #fcfcfc;
+    background-color: var(--modal-back);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -92,12 +111,12 @@
   .thumb-btn-rev:hover,
   .thumb-btn-rev:focus {
     border-radius: 50%;
-    background-color: #fcf1e0;
+    background-color: var(--btn-back);
   }
   
   .thumb-btn-rev:hover .thumb-svg-rev,
   .thumb-btn-rev:focus .thumb-svg-rev {
-    fill: #d44528;
+    fill: var(--cross-black-hov);
   }
   
   .modal-str-rev {
@@ -110,7 +129,7 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--background-color);
     margin-bottom: 32px;
   }
   
@@ -125,7 +144,7 @@
   }
   
   .modal-str-rev-2 {
-    color: #fd9222;
+    color: var(--brand-color);
   }
   .modal-form-rev {
     margin-bottom: 18px;
@@ -160,7 +179,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #111111;
+    color: var(--background-color);
   }
   @media only screen and (min-width: 768px) {
     .input-rev {
@@ -213,7 +232,7 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.02em;
-    color: #000000;
+    color: var(--color-text);
     gap: 8px;
     width: 70px;
     height: 25px;
@@ -246,13 +265,13 @@
     padding: 0;
     width: 93px;
     height: 41px;
-    background: #fd9222;
+    background: var(--brand-color);
+    color: var(--background-white);
     border-radius: 100px;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #ffffff;
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -268,7 +287,7 @@
   
   .btn-modal-rev:hover,
   .btn-modal-rev:focus {
-    background: #fcf1e0;
-    color: #fd9222;
+    background: var(--btn-back);
+    color: var(--brand-color);
   }
   
