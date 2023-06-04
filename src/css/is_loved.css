@@ -1,175 +1,33 @@
-.swiper {
+.section {
+    padding-bottom: 72px;
+}
+
+.container {
     max-width: 335px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.swiper-wrapper {
-    padding-top: 40px;
-}
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.20;
 
-.review-item {
-    max-width: 335px;
-    min-height: 200px;
-
-    background: var(--background-white);
-
-    border: 2.5px solid rgba(17, 17, 17, 0.08);
-    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
-
-    border-radius: 15px;
-
-    box-sizing: border-box;
-}
-
-.item-content {
-    position: relative;
-
-    padding-left: 18px;
-    padding-right: 18px;
-}
-
-.item-content::before {
-    content: " ";
-    display: block;
-    position: absolute;
-
-    top: 0%;
-    right: 50%;
-    transform: translate(50%, -50%);
-
-    width: 80px;
-    height: 80px;
-
-    border-radius: 50%;
-}
-
-.victoria::before {
-    background-image: url(../images/mobile/reviews-img/review-img-1.png);
-}
-
-.nazar::before {
-    background-image: url(../images/mobile/reviews-img/review-img-2.png);
-}
-
-.olena::before {
-    background-image: url(../images/mobile/reviews-img/review-img-3.png);
-}
-
-.natalia::before {
-    background-image: url(../images/mobile/reviews-img/review-img-4.png);
-}
-
-.danilo::before {
-    background-image: url(../images/mobile/reviews-img/review-img-5.png);
-}
-
-.irina::before {
-    background-image: url(../images/mobile/reviews-img/review-img-6.png);
-}
-/*  2x for retina  */
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .victoria::before{
-        background-image: url(../images/mobile/reviews-img/review-img-1-2x.png);
-
-        background-size: 80px;
-    }
-
-    .nazar:before {
-        background-image: url(../images/mobile/reviews-img/review-img-2-2x.png);
-
-        background-size: 80px;
-    }
-    
-    .olena:before {
-        background-image: url(../images/mobile/reviews-img/review-img-3-2x.png);
-
-        background-size: 80px;
-    }
-    
-    .natalia:before {
-        background-image: url(../images/mobile/reviews-img/review-img-4-2x.png);
-
-        background-size: 80px;
-    }
-    
-    .danilo:before {
-        background-image: url(../images/mobile/reviews-img/review-img-5-2x.png);
-
-        background-size: 80px;
-    }
-    
-    .irina:before {
-        background-image: url(../images/mobile/reviews-img/review-img-6-2x.png);
-
-        background-size: 80px;
-    }
-}
-
-.review-title {
     text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 
-    padding-top: 56px;
+    color: var(--background-color);
+
+    margin-bottom: 32px;
 }
 
-.review-text {
-    text-align: center;
-
-    margin-top: 24px;
-
-    color: rgba(17, 17, 17, 0.7);
+.accent {
+    color: rgba(253, 146, 34, 1);
 }
 
-.swiper-pagination {
-    position: relative;
-    
-    margin-top: 20px;
-}
-
-.swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
-
-    background-color: var(--background-color);
 
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: rgba(253, 146, 34, 1);
-    width: 28px;
-
-    border-radius: 100px;
-}
-
-.swiper-pagination-fraction, .swiper-pagination-custom.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 0;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 13px 0 0;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
-    margin-right: 0;
-}
-
-.button {
-        margin: 32px 0 0 auto;
-        padding: 0;
-
-        width: 162px;
-        height: 50px;
-
-        font-size: 18px;
-        line-height: 1.22;     
-    }
-
-    .review-button {
-        margin: 50px auto 0 auto;
-        
-        width: 222px;
-    }
