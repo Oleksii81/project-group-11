@@ -10,7 +10,7 @@
     max-width: 335px;
     min-height: 200px;
 
-    background: var(--second-text-color);
+    background: var(--background-white);
 
     border: 2.5px solid rgba(17, 17, 17, 0.08);
     box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
@@ -117,7 +117,7 @@
 
     margin-top: 24px;
 
-    color: var(--fourth-text-color);
+    color: rgba(17, 17, 17, 0.7);
 }
 
 .swiper-pagination {
@@ -130,7 +130,7 @@
     width: 13px;
     height: 13px;
 
-    background-color: var(--main-text-color);
+    background-color: var(--background-color);
 
 
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -139,7 +139,7 @@
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--accent-color);
+    background-color: rgba(253, 146, 34, 1);
     width: 28px;
 
     border-radius: 100px;
@@ -156,3 +156,20 @@
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
     margin-right: 0;
 }
+
+.button {
+        margin: 32px 0 0 auto;
+        padding: 0;
+
+        width: 162px;
+        height: 50px;
+
+        font-size: 18px;
+        line-height: 1.22;     
+    }
+
+    .review-button {
+        margin: 50px auto 0 auto;
+        
+        width: 222px;
+    }
