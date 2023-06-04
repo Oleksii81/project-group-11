@@ -1,0 +1,335 @@
+/* html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fafafa;
+    color: #111111;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  .link {
+    color: inherit;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } */
+  
+  .uc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    .uc-container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .uc-container {
+      max-width: 1200px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  /* STYLES */
+  
+  .uc-container-title-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    gap: 24px;
+    padding-bottom: 32px;
+  }
+  @media only screen and (max-width: 355px) {
+    .uc-container-title-text {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .uc-container-title-text {
+      width: 486px;
+      gap: 28px;
+      padding-bottom: 50px;
+    }
+  }
+  
+  .uc-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    margin: 0 26px 0 26px;
+  }
+  
+  .uc-title-span {
+    color: #fd9222;
+  }
+  @media only screen and (min-width: 768px) {
+    .uc-title {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+  
+  .uc-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #111111;
+  }
+  
+  .ingredients-container {
+    width: 335px;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-container {
+      width: 704px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .ingredients-container {
+      width: 1137px;
+    }
+  }
+  
+  .ingredients-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      column-gap: 32px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-list {
+      flex-wrap: nowrap;
+      gap: 19px;
+    }
+  }
+  
+  .ingredients-item-mc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 270px;
+    background: #fd9222;
+    border-radius: 15px;
+    order: 1;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-item-mc {
+      width: 336px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-item-mc {
+      width: 270px;
+    }
+  }
+  
+  .ingredients-image {
+    width: 224px;
+    height: 171px;
+    margin-top: 28px;
+    margin-right: 55px;
+    margin-bottom: 25px;
+    margin-left: 56px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-image {
+      width: 206px;
+      height: 160px;
+  
+      margin-right: 36px;
+      margin-bottom: 36px;
+      margin-left: 28px;
+    }
+  }
+  
+  .mc-txt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 179px;
+    margin-bottom: 28px;
+    margin-left: 28px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .mc-txt {
+      margin-right: 114px;
+    }
+  }
+  
+  .ingredients-item-m {
+    width: 335px;
+    height: 270px;
+    background: #ffffff;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    order: 2;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-item-m {
+      width: 336px;
+      order: 3;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-item-m {
+      width: 270px;
+      order: 2;
+    }
+  }
+  
+  .m-txt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-right: 271px;
+    margin-bottom: 28px;
+    margin-left: 28px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .m-txt {
+      margin-right: 206px;
+    }
+  }
+  
+  .ingredients-item-n {
+    width: 335px;
+    height: 270px;
+    background: #1e1823;
+    border-radius: 15px;
+    order: 3;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-item-n {
+      width: 336px;
+      order: 4;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-item-n {
+      width: 270px;
+      order: 3;
+    }
+  }
+  
+  .n-txt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 268px;
+    margin-bottom: 28px;
+    margin-left: 28px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .n-txt {
+      margin-right: 203px;
+    }
+  }
+  
+  .ingredients-item-s {
+    width: 335px;
+    height: 270px;
+    background: #ffffff;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    order: 4;
+  }
+  @media only screen and (min-width: 768px) {
+    .ingredients-item-s {
+      width: 336px;
+      order: 2;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .ingredients-item-s {
+      width: 270px;
+      order: 4;
+    }
+  }
+  
+  .s-txt {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-right: 115px;
+    margin-bottom: 28px;
+    margin-left: 28px;
+  }
+  @media only screen and (min-width: 1200px) {
+    .s-txt {
+      margin-right: 50px;
+    }
+  }
