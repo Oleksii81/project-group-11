@@ -3,6 +3,7 @@
   background-color: var(--dark-violet-color);
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 72px;
 }
 
 /* Tablet styles >=768px */
@@ -10,11 +11,18 @@
   .benefits {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Desctop styles>=1200px */
+@media only screen and (min-width: 1200px) {
+  .benefits {
+    margin-bottom: 128px;
   }
 }
 
 /* Basic styles */
-
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
