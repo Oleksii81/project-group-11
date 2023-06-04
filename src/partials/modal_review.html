@@ -1,0 +1,61 @@
+<button data-modal-open-2 class="title-btn" type="button">Review</button>
+
+<div class="backdrop-rev is-hidden-rev" data-modal-2>
+  <div class="thumb-div-rev">
+    <button data-modal-close-2 type="button" class="thumb-btn-rev">
+      <svg width="12" height="12" class="thumb-svg-rev">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <strong class="modal-str-rev"
+      >LEAVE A REVIEW <br />ABOUT
+      <span class="modal-str-rev-2">OUR CHOKOLATE</span></strong
+    >
+    <!-- INPUTS -->
+    <form class="modal-form-rev">
+      <ul class="inp-ul-rev list">
+        <li class="inp-li-rev">
+          <input
+            class="input-rev"
+            type="text"
+            placeholder="Name"
+            
+          />
+        </li>
+        <li class="inp-li-rev">
+          <input
+            class="input-rev"
+            type="text"
+            placeholder="Enter your email"
+            
+          />
+        </li>
+        <li class="inp-li-rev">
+          <div class="inp-number-div">
+            <input
+              class="input-rev input-num-rev"
+              placeholder="Phone number"
+              minlength="9"
+              maxlength="9"
+            />
+            <span class="mun-span-rev">
+              <svg width="24" height="18" class="flag-svg">
+                <use href="./images/icons.svg#flag"></use></svg
+              >+380</span
+            >
+          </div>
+        </li>
+        <li class="inp-li-rev">
+          <textarea
+            class="input-rev input-comm-rev"
+            name="Comment"
+            id="modal_comment"
+            rows="4"
+            placeholder="Enter text"
+          ></textarea>
+        </li>
+      </ul>
+    </form>
+    <button class="btn-modal-rev" type="submit">Send</button>
+  </div>
+</div>

@@ -1,134 +1,147 @@
+<button data-modal-open class="title-btn" type="button">Buy now</button>
+
 <!-- Module Window -->
-<div class="backdrop" is-hidden data-modal>
-    <div class="thumb-div">
-      <button data-modal-close type="button" class="thumb-btn">
-        <svg width="12" height="12" class="thumb-svg">
-          <use href="src/img/sprite.svg#cross_black"></use>
-        </svg>
-      </button>
-      <strong class="modal-str">BUY<span class="modal-str-2">NOW</span></strong>
-      <ul class="choko-ul list">
-        <li class="choko-li">
-          <div class="choko-div">
-            <img
-              class="choko-img"
-              srcset="
-                /src/img/modal-sellers/choko1.png           84w,
-                /src/img/modal-sellers/choko1@2x.png       168w,
-                /src/img/modal-sellers/choko1_tab_deck.png 121w,
-                /src/img/modal-sellers/choko1.png          240w
-              "
-              sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
-              src="/src/img/modal-sellers/choko1.png"
-              alt="choko1"
+<div class="backdrop is-hidden" data-modal>
+  <div class="thumb-div">
+    <button data-modal-close type="button" class="thumb-btn">
+      <svg width="12" height="12" class="thumb-svg">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <strong class="modal-str"
+      >BUY<span class="modal-str-2">NOW</span></strong
+    >
+    <ul class="choko-ul list">
+      <li class="choko-li">
+        <div class="choko-div">
+          <img
+            class="choko-img"
+            srcset="
+              ./images/choko/choko1.png              84w,
+              ./images/choko/choko1@2x.png          168w,
+              ./images/choko/choko1_tab_deck.png    121w,
+              ./images/choko/choko1@2x_tab_deck.png 240w
+            "
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="./images/choko/choko1.png"
+            alt="choko1"
+          />
+          <button type="button" class="choko-price">100 g</button>
+        </div>
+      </li>
+      <li class="choko-li">
+        <div class="choko-div">
+          <img
+            srcset="
+              ./images/choko/choko2.png              84w,
+              ./images/choko/choko2@2x.png          168w,
+              ./images/choko/choko2_tab_deck.png    121w,
+              ./images/choko/choko2@2x_tab_deck.png 240w
+            "
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="./images/choko/choko2.png"
+            alt="choko2"
+          />
+          <button class="choko-price">200 g</button>
+        </div>
+      </li>
+      <li class="choko-li">
+        <div class="choko-div">
+          <img
+            srcset="
+              ./images/choko/choko3.png              84w,
+              ./images/choko/choko3@2x.png          168w,
+              ./images/choko/choko3_tab_deck.png    121w,
+              ./images/choko/choko3@2x_tab_deck.png 240w
+            "
+            sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
+            src="./images/choko/choko3.png"
+            alt="choko3"
+          />
+          <button class="choko-price">300 g</button>
+        </div>
+      </li>
+    </ul>
+    <!-- INPUTS -->
+    <form class="modal-form">
+      <ul class="inp-ul list">
+        <li class="inp-li">
+          <label class="inp-lab" for="">Personal information</label>
+          <ul class="person-inp-ul list">
+            <li class="person-inp-li">
+              <input
+                class="input"
+                type="text"
+                placeholder="Name"
+                required
+              />
+            </li>
+            <li class="person-inp-li">
+              <input
+                class="input"
+                type="text"
+                placeholder="Surname"
+                required
+              />
+            </li>
+          </ul>
+        </li>
+        <li class="inp-li">
+          <label class="inp-lab" for="">Email</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter your email"
+            required
+          />
+        </li>
+        <li class="inp-li">
+          <label class="inp-lab" for="">Phone number</label>
+          <div class="inp-number-div">
+            <input
+              class="input input-num"
+              placeholder="Phone number"
+              required
+              minlength="9"
+              maxlength="9"
             />
-            <button type="button" class="choko-price">100 g</button>
+            <span class="mun-span">
+              <svg width="24" height="18" class="flag-svg">
+                <use href="./images/icons.svg#flag"></use></svg
+              >+380</span
+            >
           </div>
         </li>
-        <li class="choko-li">
-          <div class="choko-div">
-            <img
-              srcset="
-                /src/img/modal-sellers/choko2.png           84w,
-                /src/img/modal-sellers/choko2@2x.png       168w,
-                /src/img/modal-sellers/choko2_tab_deck.png 121w,
-                /src/img/modal-sellers/choko2.png          240w
-              "
-              sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
-              src="/src/img/modal-sellers/choko1.png"
-              alt="choko2"
-              
+
+        <li class="inp-li">
+          <label class="inp-lab" for="">Card number</label>
+          <div class="inp-card-div">
+            <input
+              class="input input-card"
+              type="text"
+              placeholder="Enter Card"
+              required
+              minlength="16"
+              maxlength="16"
             />
-            <button class="choko-price">200 g</button>
+            <svg width="32" height="21" class="card-svg">
+              <use href="./images/icons.svg#card"></use>
+            </svg>
           </div>
         </li>
-        <li class="choko-li">
-          <div class="choko-div">
-            <img
-              srcset="
-                /src/img/modal-sellers/choko3.png           84w,
-                /src/img/modal-sellers/choko3@2x.png       168w,
-                /src/img/modal-sellers/choko3_tab_deck.png 121w,
-                /src/img/modal-sellers/choko3.png          240w
-              "
-              sizes="(min-width: 768px) 121px, (min-width: 320px) 84px, 100vw"
-              src="/src/img/modal-sellers/choko3.png"
-              alt="choko3"
-            />
-            <button class="choko-price">300 g</button>
-          </div>
+
+        <li class="inp-li">
+          <label class="inp-lab" for="modal_comment">Comment</label>
+          <textarea
+            class="input input-comm"
+            name="Comment"
+            id="modal_comment"
+            rows="4"
+            placeholder="Enter text"
+          ></textarea>
         </li>
       </ul>
-      <!-- INPUTS -->
-      <form class="modal-form">
-        <ul class="inp-ul list">
-          <li class="inp-li">
-            <label class="inp-lab" for="">Personal information</label>
-            <ul class="person-inp-ul">
-              <li class="person-inp-li">
-                <input class="input" type="text" placeholder="Name" required />
-              </li>
-              <li class="person-inp-li">
-                <input class="input" type="text" placeholder="Surname" required />
-              </li>
-            </ul>
-          </li>
-          <li class="inp-li">
-            <label class="inp-lab" for="">Email</label>
-            <input
-              class="input"
-              type="text"
-              placeholder="Enter your email"
-              required
-            />
-          </li>
-          <li class="inp-li">
-            <label class="inp-lab" for="">Phone number</label>
-            <div class="inp-number-div">
-              <input
-                class="input input-num"
-                placeholder="| Phone number"
-                required
-                minlength="9"
-                maxlength="9"
-              />
-              <span class="mun-span">
-                <svg width="24" height="18" class="flag-svg">
-                  <use href="/src/img/sprite.svg#flag"></use></svg
-                >+380</span
-              >
-            </div>
-          </li>
-  
-          <li class="inp-li">
-            <label class="inp-lab" for="">Card number</label>
-            <div class="inp-card-div">
-              <input
-                class="input input-card"
-                type="text"
-                placeholder="Enter Card"
-                required
-                minlength="16"
-                maxlength="16"
-              />
-              <svg width="32" height="21" class="card-svg">
-                <use href="/src/img/sprite.svg#mastercard"></use>
-              </svg>
-            </div>
-          </li>
-  
-          <li class="inp-li">
-            <label class="inp-lab" for="modal_comment">Comment</label>
-            <textarea
-              class="input input-comm"
-              name="Comment"
-              id="modal_comment"
-              rows="4"
-              placeholder="Enter text"
-            ></textarea>
-          </li>
-        </ul>
-      </form>
-      <button class="btn-modal" type="submit">Submit</button>
-    </div>
+    </form>
+    <button class="btn-modal" type="submit">Submit</button>
   </div>
+</div>
