@@ -1,0 +1,150 @@
+:root {
+    --brand-color: #FD9222;
+    --background-color: #111111;
+    --dark-violet-color: #1E1823;
+    --background-white: #FFFFFF;
+    --shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #E2E2E2;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.item-sellers {
+    list-style: none;
+}
+
+.text-sellers {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.list-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-content: stretch;
+
+
+}
+
+@media screen and (min-width:768px) {
+    .list-sellers {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+.button-sellers {
+    background: var(--brand-color);
+    color: var(--background-white);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    border: none;
+    display: flex;
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    border-radius: 100px;
+
+}
+
+
+
+.btn-buy-now {
+    width: 64px;
+    height: 17px;
+}
+
+@media screen and (min-width:768px) {
+
+    .btn-buy-now {
+        text-align: center;
+        width: 82px;
+        height: 22px;
+    }
+}
+
+
+.name-sellers {
+    text-align: center;
+    margin: 32px;
+}
+
+@media screen and (min-width:768px) {
+    .name-sellers {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:1159px) {
+    .black-chocolate-sellers {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1159px) {
+
+    .nuts-milk-chocolate-sellers {
+        display: flex;
+
+    }
+}
+
+.text-btn-sellers {
+    display: flex;
+    justify-content: center;
+    width: 306px;
+}
