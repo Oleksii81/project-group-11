@@ -37,7 +37,7 @@
           aria-label="Instagram link"
         >
           <svg width="24" height="24" class="header-social-icon">
-            <use href="./img/sprite.svg#twitter"></use>
+            <use href="./img/sprite.svg#instagram"></use>
           </svg>
         </a>
       </li>
@@ -50,12 +50,17 @@
           aria-label="Twitter link"
         >
           <svg width="24" height="24" class="header-social-icon">
-            <use href="./img/sprite.svg#instagram"></use>
+            <use href="./img/sprite.svg#twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <button type="button" class="header-menu-button">
+    <button
+      type="button"
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="header-menu-icon">
         <use href="./img/sprite.svg#burger"></use>
       </svg>
@@ -63,4 +68,61 @@
   </div>
 </header>
 
-<div class="mobile-menu"></div>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="mobile-menu-close-icon">
+      <use href="./img/sprite.svg#cross_white"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu-list">
+    <li>
+      <a href="#home" class="mobile-menu-link">Home</a>
+    </li>
+    <li>
+      <a href="#how-it's-made?" class="mobile-menu-link"
+        >How it&#8217;s made?</a
+      >
+    </li>
+    <li>
+      <a href="#our-products" class="mobile-menu-link">Our products</a>
+    </li>
+    <li>
+      <a href="#top-sellers" class="mobile-menu-link">Top sellers</a>
+    </li>
+    <li>
+      <a href="#chocolate-is-loved" class="mobile-menu-link"
+        >Chocolate is loved</a
+      >
+    </li>
+  </ul>
+  <ul class="mobile-menu-social-list">
+    <li>
+      <a
+        class="mobile-menu-social-link"
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Instagram link"
+      >
+        <svg class="mobile-menu-social-icon instagram">
+          <use href="./img/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a
+        class="mobile-menu-social-link"
+        href="https://www.twitter.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Twitter link"
+      >
+        <svg class="mobile-menu-social-icon twitter">
+          <use href="./img/sprite.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script defer src="../js/mobile-menu.js"></script>
