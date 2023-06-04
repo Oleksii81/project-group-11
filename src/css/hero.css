@@ -1,6 +1,6 @@
 .hero-container {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
@@ -8,30 +8,22 @@
   background-color: #fcf1e0;
   background-image: linear-gradient(
     to top,
-    rgba(17, 17, 17, 1),
+    rgba(17, 17, 17, 0.4),
     rgba(17, 17, 17, 0)
   );
-}
-
-@media screen and (min-width: 320px) and (max-width: 374px) {
-  .hero-container {
-    background-size: cover;
-    max-height: 621px;
-    max-width: 335px;
-  }
 }
 
 @media screen and (max-width: 767px) {
   .hero-container {
     max-width: 375px;
     padding: 395px 20px 20px;
-    max-height: 621px;
+    /* max-height: 621px; */
 
     margin-bottom: 72px;
 
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-mobile.jpg');
@@ -45,7 +37,7 @@
   .hero-container {
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-mobile@2x.jpg');
@@ -56,12 +48,13 @@
   .hero-container {
     max-width: 768px;
     padding: 671px 40px 40px;
+    background-size: cover;
 
     margin-bottom: 50px;
 
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-tablet.jpg');
@@ -75,7 +68,7 @@
   .hero-container {
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-tablet@2x.jpg');
@@ -88,11 +81,9 @@
     padding-top: 361px;
     margin-bottom: 69px;
 
-    background-size: cover;
-
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-desctop.jpg');
@@ -106,7 +97,7 @@
   .hero-container {
     background-image: linear-gradient(
         to top,
-        rgba(17, 17, 17, 1),
+        rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0)
       ),
       url('../img/project-hero-pics/hero-desctop@2x.jpg');
@@ -119,7 +110,7 @@
   font-size: 20px;
   line-height: 1.2;
   text-align: left;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.03em;
   color: #ffffff;
 
   margin-bottom: 32px;
@@ -127,6 +118,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-sub-title {
+    line-height: 1.21;
     font-size: 28px;
     max-width: 484px;
   }
@@ -136,7 +128,7 @@
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.21;
   color: #ffffff;
   padding: 12px 28px;
 
@@ -147,8 +139,7 @@
   border: none;
   display: inline-block;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), color var(--transition);
 }
 
 @media screen and (min-width: 768px) {
@@ -170,10 +161,10 @@
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.21;
   color: #ffffff;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.03em;
 
   padding: 12px 28px;
   height: 41px;
@@ -182,8 +173,7 @@
   border: 1px solid #ffffff;
   display: block;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition), color var(--transition);
 }
 
 @media screen and (min-width: 768px) {
@@ -233,8 +223,13 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-scroll-btn {
+    max-width: 107px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -255,8 +250,7 @@
   padding: 6px;
   fill: var(--brand-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), fill var(--transition);
 }
 
 @media screen and (min-width: 768px) {
