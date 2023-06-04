@@ -1,4 +1,6 @@
 :root {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
     --brand-color: #FD9222;
     --background-color: #111111;
     --dark-violet-color: #1E1823;
@@ -11,12 +13,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    background-color: #E2E2E2;
 }
 
 .container {
@@ -42,85 +38,29 @@ body {
     }
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+.section-sellers {
 
-.item-sellers {
-    list-style: none;
-}
-
-.text-sellers {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
-    text-align: left;
+    padding-bottom: 32px;
 
 }
 
-.list-sellers {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-    align-content: stretch;
-
-
+.orange {
+    color: var(--brand-color);
 }
-
-@media screen and (min-width:768px) {
-    .list-sellers {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-
-.button-sellers {
-    background: var(--brand-color);
-    color: var(--background-white);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    border: none;
-    display: flex;
-    padding: 12px 28px;
-    width: 120px;
-    height: 41px;
-    border-radius: 100px;
-
-}
-
-
-
-.btn-buy-now {
-    width: 64px;
-    height: 17px;
-}
-
-@media screen and (min-width:768px) {
-
-    .btn-buy-now {
-        text-align: center;
-        width: 82px;
-        height: 22px;
-    }
-}
-
 
 .name-sellers {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 72px;
+    line-height: 28px;
+
     text-align: center;
-    margin: 32px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
 }
 
 @media screen and (min-width:768px) {
@@ -129,22 +69,92 @@ body {
     }
 }
 
-@media screen and (max-width:1159px) {
-    .black-chocolate-sellers {
-        display: none;
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .name-sellers {
+        margin-top: 100px;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1159px) {
+@media screen and (min-width:1200px) {
+    .name-sellers {
+        margin-top: 128px;
+    }
+}
 
-    .nuts-milk-chocolate-sellers {
+.text-sellers {
+    width: 306px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
+    letter-spacing: -0.02em;
+}
+
+
+.button-sellers {
+    background: var(--brand-color);
+    color: var(--background-white);
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.21;
+    border: none;
+
+    padding: 12px 28px;
+    width: 120px;
+    height: 41px;
+    border-radius: 100px;
+
+}
+
+@media screen and (min-width:768px) {
+    .button-sellers {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.2;
+        width: 162px;
+        height: 50px;
+    }
+}
+
+.button-sellers:hover,
+.button-sellers:focus {
+    color: var(--brand-color);
+    background: #FCF1E0;
+}
+
+
+.list-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+}
+
+@media screen and (min-width:768px) {
+
+    .item-sellers {
         display: flex;
 
     }
 }
 
-.text-btn-sellers {
-    display: flex;
-    justify-content: center;
-    width: 306px;
+@media screen and (min-width:768px) {
+
+    .text-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .list-sellers {
+        display: flex;
+        justify-content: center;
+    }
+
 }
