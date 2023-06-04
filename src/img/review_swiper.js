@@ -1,22 +1,26 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+new Swiper('.swiper', {
+    direction: 'horizontal',
+    autoHeight: true,
+    loop: true,
+    slidesPerView: '1',
+  
+    spaceBetween: 16,
+  
+    freeMode: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoHeight: true,
+    breakpoints: {
+      768: {
+        spaceBetween: 16,
+        slidesPerView: '2',
+      },
+      1200: {
+        spaceBetween: 28,
+        slidesPerView: '3',
+      },
+    },
+  }); 
