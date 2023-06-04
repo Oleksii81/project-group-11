@@ -1,0 +1,1 @@
+import './js/review_swiper.js';
