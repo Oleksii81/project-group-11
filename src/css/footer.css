@@ -5,12 +5,12 @@
   padding-left: 20px;
 }
 
-.slogan-container {
+.footer-title-container {
   max-width: 250px;
   margin-bottom: 32px;
 }
 
-.footer-text {
+.footer-title {
   color: var(--background-white);
   font-style: normal;
   font-weight: 500;
@@ -19,7 +19,7 @@
   letter-spacing: -0.02em;
 }
 
-.footer-text-item {
+.footer-title-item {
   color: var(--brand-color);
 }
 
@@ -30,7 +30,7 @@
   line-height: 1.28;
   margin-bottom: 14px;
 }
-.contacts-container {
+.footer-contacts-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
@@ -63,11 +63,21 @@
   .footer-social-list-icon:focus {
    stroke: var(--brand-color);
 }
-  
+ 
 
 
 .footer-menu {
   display: flex;
+}
+
+.footer-menu-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-menu-link:hover,
@@ -88,14 +98,6 @@
 }
 
 
-.footer-menu-link{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-}
 
 @media screen and (min-width: 375px) {
   .container {
@@ -127,11 +129,11 @@
     gap: 24px;
   }
 
-  .footer-text {
+  .footer-title {
     line-height: 1.21;
   }
 
-  .contacts-container {
+  .footer-contacts-container {
     gap: 52px;
   }
 
@@ -160,3 +162,5 @@
   }
 
 }
+
+
