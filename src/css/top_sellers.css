@@ -1,0 +1,144 @@
+.top-sellers {
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-sellers {
+    margin-bottom: 128px;
+  }
+}
+
+.top-sellers-header {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-header {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
+.top-sellers-header-part {
+  color: var(--brand-color);
+}
+
+@media screen and (max-width: 767px) {
+  .top-sellers-item {
+    margin-bottom: 20px;
+  }
+}
+
+.top-sellers-image {
+  border-radius: 15px;
+}
+
+.top-sellers-text {
+  width: 407px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+@media screen and (max-width: 1199px) {
+  .top-sellers-text {
+    width: 306px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .top-sellers-item-nuts {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .desctop-only-image {
+    display: none;
+  }
+}
+
+.additional-text-mobile {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .additional-text-mobile {
+    display: none;
+  }
+}
+
+.top-sellers-btn {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+
+  padding: 12px 28px;
+  background-color: var(--brand-color);
+  border-radius: 100px;
+  min-width: 120px;
+  border: none;
+
+  transition: background-color var(--transition), color var(--transition);
+}
+
+@media screen and (max-width: 767px) {
+  .top-sellers-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-btn {
+    min-width: 162px;
+    padding: 14px 40px;
+  }
+}
+
+.top-sellers-btn:hover,
+.top-sellers-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .top-sellers-positioning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
