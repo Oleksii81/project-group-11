@@ -39,6 +39,12 @@
   color: var(--brand-color);
 }
 
+@media screen and (max-width: 767px) {
+  .top-sellers-item {
+    margin-bottom: 20px;
+  }
+}
+
 .top-sellers-image {
   border-radius: 15px;
 }
@@ -64,6 +70,9 @@
   .mobile-hidden {
     display: none;
   }
+  .top-sellers-item-nuts {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -74,7 +83,6 @@
 
 .additional-text-mobile {
   margin-top: 20px;
-  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,7 +109,6 @@
 
 @media screen and (max-width: 767px) {
   .top-sellers-btn {
-    margin-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
