@@ -44,7 +44,7 @@
 }
 
 .top-sellers-text {
-  width: 306px;
+  width: 407px;
   font-family: Montserrat;
   font-weight: 400;
   font-size: 14px;
@@ -54,15 +54,15 @@
   color: #111111;
 }
 
-@media screen and (max-width: 767px) {
-  .mobile-hidden {
-    display: none;
+@media screen and (max-width: 1199px) {
+  .top-sellers-text {
+    width: 307px;
   }
 }
 
-@media sreen and (min-width: 1200px) {
-  .top-sellers-text {
-    width: 407px;
+@media screen and (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
   }
 }
 
