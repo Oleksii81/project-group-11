@@ -1,3 +1,4 @@
+<!-- Subscribe section -->
 <section class="subscribe-section">
     <div class="subscribe-wrapper container">
         <h2 class="subscribe-title">Explore our new chokolate first</h2>
@@ -10,18 +11,30 @@
 
 <!-- Modal -->
 
-<div class="subscribe-modal">
-    <button type="button" class="subs-btn-close">
-        <svg class="subs-svg-close">
-            <use href="../img/sprite.svg#cross_white"></use>
-        </svg>
-    </button> 
-
-    <!-- Form -->
-    
-    <form class="subscribe-form">
-        <label for="subscribe"class="label-subs">
-            <input type="text" class="input-subs" name="email" id="subscribe" pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$" placeholder="Enter your email">
-        </label>
-    </form>
+<div class="backdrop">
+    <div class="subscribe-modal">
+        <div class="subscribe-background">
+            <button type="button" class="subs-btn-close">
+                <svg class="subs-svg-close">
+                    <use href="../img/sprite.svg#cross_white"></use>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Form -->
+        <div class="subscribe-wrap-form">
+            <h2 class="subs-modal-title">Explore our
+                <br><span class="subs-wrap">new chocolate</span> first!
+            </h2>
+            <form class="subscribe-form">
+                <div class="subs-wrap-btn">
+                    <label for="subscribe" class="label-subs">
+                        <input type="text" class="input-subs" name="email" id="subscribe"
+                            pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$" placeholder="Enter your email">
+                    </label>
+                    <button type="button" class="subs-modal-btn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
