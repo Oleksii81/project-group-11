@@ -3,7 +3,6 @@
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 20px;
-  margin: 0;
 }
 
 .footer-title-container {
@@ -56,6 +55,7 @@
 .footer-social-list-icon{
    fill: var(--dark-violet-color);
    stroke: var(--background-white);
+   stroke-width: 1px;
    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
@@ -112,23 +112,17 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 704px;
   }
-
   .footer {
     padding-bottom: 50px;
     padding-top: 50px;
-  }
-
-  .footer-title-container{
-    margin-bottom: 0;
   }
 
   .first-part-container {
     display: flex;
     margin-bottom: 54px;
     justify-content: space-between;
-   
   }
 
   .footer-menu {
@@ -141,7 +135,6 @@
 
   .footer-contacts-container {
     gap: 52px;
-    margin-bottom: 0;
   }
 
   .line-container {
@@ -156,7 +149,7 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1136px;
   }
 
   .line-container {
