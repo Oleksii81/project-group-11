@@ -77,6 +77,9 @@
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe-bg/subscribe-mobile.jpg);
             padding-top: 62px;
             padding-bottom: 62px;
+            max-width: 428px;
+            margin-left: auto;
+            margin-right: auto;
         }
 }
 
@@ -91,6 +94,9 @@
 @media screen and (min-width: 768px) {
     .subscribe-section {
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe-bg/subscribe-tablet.jpg);
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
         }
 }
 
@@ -104,6 +110,9 @@
 
 @media screen and (min-width: 1200px) {
     .subscribe-section {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe-bg/subscribe-desktop.jpg);
     }
 }
