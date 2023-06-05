@@ -1,0 +1,286 @@
+.hero-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #fcf1e0;
+  background-image: linear-gradient(
+    to top,
+    rgba(17, 17, 17, 0.4),
+    rgba(17, 17, 17, 0)
+  );
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    max-width: 375px;
+    padding: 395px 20px 20px;
+    /* max-height: 621px; */
+
+    margin-bottom: 72px;
+
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-mobile.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-container {
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+    padding: 671px 40px 40px;
+    background-size: cover;
+
+    margin-bottom: 50px;
+
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-tablet.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-container {
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+    padding-top: 361px;
+    margin-bottom: 69px;
+
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-desctop.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-container {
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0)
+      ),
+      url('../img/project-hero-pics/hero-desctop@2x.jpg');
+  }
+}
+
+.hero-sub-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-sub-title {
+    line-height: 1.21;
+    font-size: 28px;
+    max-width: 484px;
+  }
+}
+
+.hero-btn-order {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  padding: 12px 28px;
+
+  background-color: var(--brand-color);
+  height: 41px;
+  min-width: 120px;
+  border-radius: 100px;
+  border: none;
+  display: inline-block;
+
+  transition: background-color var(--transition), color var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-btn-order {
+    padding: 14px 40px;
+
+    height: 45px;
+    min-width: 144px;
+  }
+}
+
+.hero-btn-order:hover,
+.hero-btn-order:focus {
+  background-color: #fcf1e0;
+  color: var(--brand-color);
+}
+
+.hero-button-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  padding: 12px 28px;
+  height: 41px;
+  min-width: 159px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  display: block;
+
+  transition: border var(--transition), color var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button-link {
+    padding: 14px 40px;
+
+    height: 45px;
+    min-width: 183px;
+  }
+}
+
+.hero-button-link:hover,
+.hero-button-link:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-buttons {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-btns-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero-scroll-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  transition: background-color var(--transition), color var(--transition);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-scroll-btn {
+    max-width: 107px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-btn {
+    gap: 14px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero-scroll-container {
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+  background-color: white;
+  color: var(--brand-color);
+  display: inline-block;
+  padding: 6px;
+  fill: var(--brand-color);
+
+  transition: background-color var(--transition), fill var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-container {
+    height: 38px;
+    width: 38px;
+    padding: 8px;
+  }
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.hero-scroll-btn:hover,
+.hero-scroll-btn:focus {
+  background-color: none;
+  color: var(--brand-color);
+}
+
+.hero-scroll-btn:hover .hero-scroll-container,
+.hero-scroll-btn:focus .hero-scroll-container {
+  background-color: var(--brand-color);
+  fill: #fff;
+}
