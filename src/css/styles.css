@@ -15,6 +15,9 @@
 @import url('./is_loved.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./modal_sellers.css');
+@import url('./modal_review.css');
+
 
 :root {
   --brand-color: #FD9222;
@@ -31,8 +34,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     background-color: #E2E2E2;
 }
