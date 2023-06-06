@@ -49,7 +49,7 @@
 }
 
 .top-sellers-text {
-  width: 407px;
+  max-width: 407px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 1199px) {
   .top-sellers-text {
-    width: 306px;
+    max-width: 306px;
   }
 }
 
