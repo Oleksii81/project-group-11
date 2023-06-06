@@ -5,22 +5,19 @@
         <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
         craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
         that is sure to please.</p>
-        <button type="button" class="subscribe-button">Subscribe</button>
+        <button  type="button" class="subscribe-button" data-modal-open>Subscribe</button>
     </div>
 </section>
-
 <!-- Modal -->
-
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
     <div class="subscribe-modal">
         <div class="subscribe-background">
-            <button type="button" class="subs-btn-close">
+            <button  type="button" class="subs-btn-close" data-modal-close>
                 <svg class="subs-svg-close">
                     <use href="../img/sprite.svg#cross_white"></use>
                 </svg>
             </button>
         </div>
-        
         <!-- Form -->
         <div class="subscribe-wrap-form">
             <h2 class="subs-modal-title">Explore our
