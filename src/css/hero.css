@@ -204,11 +204,11 @@
 @media screen and (max-width: 767px) {
   .hero-buttons {
     margin-bottom: 32px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
   }
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .hero-btns-positioning {
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@
   .hero-buttons-list {
     margin-right: auto;
   }
-} */
+} 
 
 @media screen and (min-width: 768px) {
   .hero-btns-positioning {
@@ -245,7 +245,7 @@
 
 @media screen and (max-width: 767px) {
   .hero-scroll-btn {
-    max-width: 107px;
+    min-width: 107px;
   }
 }
 
