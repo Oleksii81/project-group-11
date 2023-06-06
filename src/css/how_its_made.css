@@ -82,9 +82,7 @@
     background-color: var(--background-white);
     border-radius: 15px;
     max-width: 335px;
-    /* padding-top: 20px; */
     padding: 20px 14px;
-    /* padding-bottom: 20px; */
 }
 @media (min-width: 768px) {
     .howmade-list-div {
@@ -127,12 +125,16 @@
         padding: 32px 32px 32px;
     }
 }
+@media (min-width: 1200px) {
+    .howmade-list-div {
+        max-width: 516px;
+    }
+}
 .howmade-p {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: start;
-    /* max-width: 307px; */
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
