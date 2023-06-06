@@ -39,7 +39,6 @@
 }
 
 .uc-title {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -62,9 +61,7 @@
 }
 
 .uc-text {
-  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
