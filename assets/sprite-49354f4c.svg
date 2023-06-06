@@ -37,11 +37,8 @@
     <symbol id="burger" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M4 16h24M4 8h24M4 24h24"/>
     </symbol>
-    <symbol id="chocolate" viewBox="0 0 32 32">
-      <path fill="#e2e2e2" d="M.727 0h30.545v32H.727V0z" style="fill:var(--color12, #e2e2e2)"/>
-      <path fill="#fafafa" d="M-243.636-33.455h545.455v10530.909h-545.455V-33.455z" style="fill:var(--color4, #fafafa)"/>
-      <path fill="#fcf1e0" d="M4.492 19.89 14.779 3.258l.611-.643 7.862 5.242.054 3.163 1.919 3.13-8.476 13.437-12.256-7.696z" style="fill:var(--color13, #fcf1e0)"/>
-      <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.618" d="M21.378 23.521 7.837 15.06m3.735-6.125 13.541 8.461m-14.239 8.02L22.076 7.041m4.592 7.803c-2.902-1.813-4.041-3.23-2.174-6.293l-9.188-5.742L4.104 21.184l13.541 8.461 9.024-14.802z" style="stroke:var(--color3, #fd9222)"/>
+    <symbol id="chocolate" viewBox="0 0 28 32">
+      <path fill="none" stroke="#FD9222" style="stroke: var(--color1, #FD9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M20.301 23.88l-14.185-8.864M10.028 8.599l14.185 8.864M9.297 25.864l11.736-19.25M25.843 14.789c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.186 8.864 9.454-15.507z"></path>
     </symbol>
     <symbol id="twitter" viewBox="0 0 32 32">
       <path d="M30.667 4c-1.277 0.901-2.69 1.589-4.187 2.040-0.803-0.923-1.87-1.578-3.057-1.875s-2.437-0.222-3.58 0.214c-1.143 0.436-2.125 1.213-2.812 2.226s-1.047 2.212-1.031 3.435v1.333c-2.343 0.061-4.665-0.459-6.759-1.513s-3.894-3.143-5.241-5.061c0 0-5.333 12.533 6.667 17.867-2.746 1.864-6.017 2.799-9.333 2.667 12 6.667 26.667 0 26.667-15.333-0.001-0.371-0.037-0.742-0.107-1.107 1.361-1.342 2.321-3.036 2.773-4.893z"></path>
