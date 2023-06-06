@@ -12,7 +12,6 @@
     rgba(17, 17, 17, 0)
   );
 }
-
 @media screen and (max-width: 767px) {
   .hero-container {
     max-width: 375px;
