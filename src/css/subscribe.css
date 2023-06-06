@@ -125,7 +125,8 @@
             }
         }
 
-        /* Modal */
+        
+/* Modal */
 
 .backdrop {
     width: 100%;
@@ -138,17 +139,24 @@
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: visibility 250ms;
+}
+
 .subscribe-modal {
     width: 538px;
     background: #FAFAFA;
-    border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     border-radius: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .subs-btn-close {
@@ -190,10 +198,7 @@
     stroke: white;
 }
 
-.subs-svg-close:hover,
-.subs-svg-close:focus {
-   
-}
+/* Form */
 
 .subscribe-wrap-form {
     padding: 40px;
@@ -243,7 +248,7 @@
 }
 
 .subs-modal-btn {
-    font-family: 'Montserat';
+    font-family: inherit;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
