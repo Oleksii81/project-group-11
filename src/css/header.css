@@ -3,8 +3,7 @@
   padding-bottom: 14px;
   margin-bottom: 0;
 
-  background-color: var(--background-white);
-  border-bottom: 1px solid #000;
+  background-color: var(--background-site);
 }
 
 @media screen and (min-width: 768px) {
@@ -208,14 +207,14 @@
   position: fixed;
 }
 
-.menu-container {
+.menu-container.js-menu-container {
   position: absolute;
   width: 220px;
   height: 100vh;
   top: 0;
   right: 0;
 
-  display: flex;
+  display: none;
   flex-direction: column;
 
   padding-top: 136px;
@@ -228,7 +227,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .menu-container.js-menu-container {
     width: 290px;
     padding-top: 156px;
     padding-bottom: 24px;
@@ -237,6 +236,8 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+
+  display: flex;
 }
 
 .menu-toggle.js-close-menu {

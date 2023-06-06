@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./fonts.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./benefits.css');
@@ -24,6 +25,7 @@
   --background-color: #111111;
   --dark-violet-color: #1E1823;
   --background-white: #FFFFFF;
+  --background-site: #fafafa;
   --shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -38,7 +40,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background-color: #E2E2E2;
+    background-color: var(--background-site);
 }
 .container {
   min-width: 320px;

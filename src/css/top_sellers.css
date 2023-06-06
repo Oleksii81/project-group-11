@@ -15,7 +15,6 @@
 }
 
 .top-sellers-header {
-  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -50,8 +49,7 @@
 }
 
 .top-sellers-text {
-  width: 407px;
-  font-family: Montserrat;
+  max-width: 407px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -62,7 +60,7 @@
 
 @media screen and (max-width: 1199px) {
   .top-sellers-text {
-    width: 306px;
+    max-width: 306px;
   }
 }
 
@@ -92,7 +90,6 @@
 }
 
 .top-sellers-btn {
-  font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;

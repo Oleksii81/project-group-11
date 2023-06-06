@@ -2,12 +2,11 @@
   background-color: var(--dark-violet-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 20px;
   margin: 0;
 }
 
 .footer-title-container {
-  max-width: 250px;
+  max-width: 300px;
   margin-bottom: 32px;
 }
 

@@ -1,6 +1,6 @@
 .hero-container {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
@@ -12,12 +12,13 @@
     rgba(17, 17, 17, 0)
   );
 }
-
 @media screen and (max-width: 767px) {
   .hero-container {
-    max-width: 375px;
+    background-size: cover;
+    max-width: 335px;
+    height: 621px;
+    /* max-width: 375px; */
     padding: 395px 20px 20px;
-    /* max-height: 621px; */
 
     margin-bottom: 72px;
 
@@ -46,9 +47,10 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 768px;
+    max-width: 704px;
+    height: 890px;
+    /* max-width: 768px; */
     padding: 671px 40px 40px;
-    background-size: cover;
 
     margin-bottom: 50px;
 
@@ -77,9 +79,11 @@
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    max-width: 1200px;
-    padding-top: 361px;
-    margin-bottom: 69px;
+    max-width: 1136px;
+    height: 600px;
+    /* max-width: 1200px; */
+    padding-top: 381px;
+    margin-bottom: 72px;
 
     background-image: linear-gradient(
         to top,
@@ -120,7 +124,8 @@
   .hero-sub-title {
     line-height: 1.21;
     font-size: 28px;
-    max-width: 484px;
+    width: 440px;
+    max-height: 120px;
   }
 }
 
@@ -137,7 +142,7 @@
   min-width: 120px;
   border-radius: 100px;
   border: none;
-  display: inline-block;
+  /* display: inline-block; */
 
   transition: background-color var(--transition), color var(--transition);
 }
@@ -171,7 +176,7 @@
   min-width: 159px;
   border-radius: 100px;
   border: 1px solid #ffffff;
-  display: block;
+  display: inline-block;
 
   transition: border var(--transition), color var(--transition);
 }
@@ -181,7 +186,7 @@
     padding: 14px 40px;
 
     height: 45px;
-    min-width: 183px;
+    max-width: 183px;
   }
 }
 
@@ -199,8 +204,20 @@
 @media screen and (max-width: 767px) {
   .hero-buttons {
     margin-bottom: 32px;
+    flex-wrap: wrap; 
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .hero-btns-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-buttons-list {
+    margin-right: auto;
+  }
+} 
 
 @media screen and (min-width: 768px) {
   .hero-btns-positioning {
@@ -228,7 +245,7 @@
 
 @media screen and (max-width: 767px) {
   .hero-scroll-btn {
-    max-width: 107px;
+    min-width: 107px;
   }
 }
 
