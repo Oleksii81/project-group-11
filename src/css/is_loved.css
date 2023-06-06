@@ -8,7 +8,7 @@ h2 {
 }
 
 .reviews {
-  background-color: #E2E2E2;
+  background-color: var(--background-site);
   color: var(--background-color);
   padding-bottom: 72px;
 }
