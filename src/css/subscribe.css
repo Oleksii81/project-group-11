@@ -139,7 +139,8 @@
 }
 
 .subscribe-modal {
-    width: 538px;
+    /*width: 538px;*/
+    width: 311px;
     background: #FAFAFA;
     border-radius: 4px;
     position: absolute;
@@ -149,6 +150,11 @@
     opacity: 1;
     border-radius: 15px;
     overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .subscribe-modal {
+        width: 538px;
+    }
 }
 
 .subs-btn-close {
@@ -196,24 +202,31 @@
 }
 
 .subscribe-wrap-form {
-    padding: 40px;
+    padding: 24px;
 }
 
 .subs-modal-title {
     font-family: inherit;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
     text-transform: uppercase;
     color: #111111;
     margin-bottom: 28px;
 }
-
+@media screen and (min-width: 768px) {
+    .subs-modal-title {
+        font-size: 24px;
+            line-height: 1.16;
+    }
+}
 .subs-wrap {
     color: var(--brand-color);
 }
 
 .label-subs {
+    position: relative;
     width: 100%;
 }
 
@@ -221,29 +234,44 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
     background: #FAFAFA;
-    height: 52px;
+    height: 45px;
     outline: none;
     cursor: pointer;
     width: 100%;
     padding-left: 24px;
 }
+@media screen and (min-width: 768px) {
+    .input-subs {
+        height: 52px;
+        width: 313px;
+    }
+}
 
 .input-subs::placeholder {
-    font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.2;
         display: flex;
         align-items: center;
         color: rgba(64, 64, 64, 0.3);
 }
-
+@media screen and (min-width: 768px) {
+    .input-subs::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
 .input-subs:focus {
     border: 1px solid var(--brand-color);
 }
 
 .subs-modal-btn {
-    font-family: 'Montserat';
+    position: absolute;
+    right: 24px;
+    height: 45px;
+    width: 100px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
@@ -253,6 +281,12 @@
     border-radius: 100px;
     border: none;
     margin-left: 8px;
+}
+@media screen and (min-width: 768px) {
+    .subs-modal-btn {
+        height: 52px;
+        width: 137px;
+    }
 }
 
 .subs-modal-btn:hover,
