@@ -222,6 +222,15 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 /* Form */
 
+.subscribe-wrap-form {
+    padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .subscribe-wrap-form {
+        padding: 32px 24px;
+    }
+}
 
 .subs-modal-title {
     font-family: inherit;
@@ -231,18 +240,23 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     text-transform: uppercase;
     color: #111111;
     text-align: start;
+    margin-bottom: 28px;
 }
 
 @media screen and (max-width: 767px) {
     .subs-modal-title {
         font-size: 20px;
         line-height: 1.2;
-        padding: 32px 24px 24px 24px;
+        margin-bottom: 24px;
     }
 }
 
 .subs-wrap {
     color: var(--brand-color);
+}
+
+.subs-wrap-btn {
+    position: relative;
 }
 
 .label-subs {
@@ -256,8 +270,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     height: 52px;
     outline: none;
     cursor: pointer;
-    width: 100%;
+    width: 263px;
     padding-left: 24px;
+    padding-right: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -303,6 +318,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (max-width: 767px) {
     .subs-modal-btn {
         padding: 14px 22px;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
 
@@ -313,7 +331,5 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subs-wrap-btn {
-    display: flex;
-}
+
 
