@@ -272,7 +272,7 @@
   width: 28px;
   height: 28px;
 
-  fill: var(--background-white);
+  stroke: var(--background-white);
 
   transition: stroke var(--transition);
 }
