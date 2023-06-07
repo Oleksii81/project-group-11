@@ -50,7 +50,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  height: 974px;
+
+  max-height: 95%;
+  overflow-y: auto;
+
+  /*height: 974px;*/
   width: 291px;
   border-radius: 15px;
   padding: 53px 14px 14px 14px;
