@@ -195,7 +195,7 @@
 
 .subs-svg-close:hover,
 .subs-svg-close:focus {
-   
+    fill: var(--brand-color);
 }
 
 .subscribe-wrap-form {
