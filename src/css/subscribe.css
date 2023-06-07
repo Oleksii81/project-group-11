@@ -4,7 +4,6 @@
 }
 
 .subscribe-title {
-    font-family:inherit;
     font-weight: 600;
     font-size: 24px;
     text-align: center;
@@ -23,8 +22,6 @@
 }
 
 .subscribe-text {
-        font-family: inherit;
-        font-weight: 400;
         font-size: 14px;
         line-height: 1.3;
         text-align: center;
@@ -44,7 +41,6 @@
     background: var(--brand-color);
     border-radius: 100px;
     border: none;
-    font-family: inherit;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2;
@@ -69,7 +65,7 @@
     background: var(--brand-color);
     padding-top: 72px;
     padding-bottom: 72px;
-    background-size: cover
+    background-size: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -206,7 +202,6 @@
 }
 
 .subs-modal-title {
-    font-family: inherit;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
