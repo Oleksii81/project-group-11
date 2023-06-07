@@ -76,7 +76,8 @@
 .thumb-btn {
   position: absolute;
   top: 14px;
-  left: 14px;
+  left: auto;
+  right: 14px;
   width: 24px;
   height: 24px;
   display: flex;
@@ -212,7 +213,7 @@
   font-size: 14px;
   line-height: 17px;
   color: var(--background-color);
-  padding: 6px 16px;
+  padding: 6px 12px;
   width: 70px;
   height: 29px;
   background: var(--modal-back);
