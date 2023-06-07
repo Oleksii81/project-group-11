@@ -100,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    stroke: var(--brand-color);
+    stroke: var(--background-color);
   }
   @media only screen and (min-width: 768px) {
     .thumb-svg-rev {
@@ -112,12 +112,12 @@
   .thumb-btn-rev:hover,
   .thumb-btn-rev:focus {
     border-radius: 50%;
-    background-color: var(--btn-back);
+    background-color: #fcf1e0;
   }
   
   .thumb-btn-rev:hover .thumb-svg-rev,
   .thumb-btn-rev:focus .thumb-svg-rev {
-    fill: var(--cross-black-hov);
+    stroke: #d44528;
   }
   
   .modal-str-rev {
