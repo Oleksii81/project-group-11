@@ -49,7 +49,7 @@
       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"  d="M23.333 8.667h0.015"></path>
     </symbol>
     <symbol id="cross_white" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.334 2.667l-26.667 26.667M2.667 2.667l26.667 26.667"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.334 2.667l-26.667 26.667M2.667 2.667l26.667 26.667"></path>
     </symbol>
   </defs>
 </svg>
