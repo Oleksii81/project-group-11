@@ -204,9 +204,16 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .subscribe-section {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe-bg/subscribe-mobile@2x.jpg);
+        background-image: url(../img/subscribe-modal-bg/tsubs-bg-mobile@2x.jpg);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .subscribe-background {
+        background-image: url(../img/subscribe-modal-bg/subs-bg-mobile.jpg);
+    }
+}
+
 
 .subs-svg-close {
     width: 14px;
@@ -255,8 +262,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--brand-color);
 }
 
-.subs-wrap-btn {
-    position: relative;
+@media screen and (max-width: 767px) {
+    .subs-wrap-btn {
+            position: relative;
+        }
 }
 
 .label-subs {
@@ -272,12 +281,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     cursor: pointer;
     width: 263px;
     padding-left: 24px;
-    padding-right: 60px;
 }
 
 @media screen and (max-width: 767px) {
     .input-subs {
-        height: 45px;
+        height: 45px;  
     }
 }
 
