@@ -3,6 +3,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const menuItems = document.querySelectorAll('.js-menu-item');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -21,5 +22,10 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
+  });
+
+  // Add event listener to each menu item
+  menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', toggleMenu);
   });
 })();
